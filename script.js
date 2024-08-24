@@ -266,6 +266,7 @@ function initGame(e) {
             // return randomWord();
         } else if (maxGuesses < 1) {
             results.innerText = "GAME OVER!💀 You have no guesses left";
+            results.style.color = "red";
             results.style.display = "block";
 
             for (let i = 0; i < word.length; i++) {
